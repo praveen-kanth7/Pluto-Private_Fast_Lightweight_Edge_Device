@@ -1,0 +1,32 @@
+# ESP-IDF Build Directories
+build/
+**/build/
+sdkconfig.old
+**/sdkconfig.old
+
+# ESP-IDF Managed Components (downloaded automatically via idf_component.yml / dependencies.lock)
+managed_components/
+**/managed_components/
+
+# Object, binary, and compiler artifacts
+*.o
+*.obj
+*.d
+*.elf
+*.map
+test_arena/measure_arena
+
+# Python bytecode and cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Editor and IDE directories
+.vscode/
+.clangd/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+[Dd]esktop.ini

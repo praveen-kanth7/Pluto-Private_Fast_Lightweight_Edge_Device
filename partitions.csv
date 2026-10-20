@@ -1,0 +1,9 @@
+# Pluto Proto - Custom Partition Table
+# ESP32-S3 with 8MB Flash
+#
+# Name,   Type, SubType,  Offset,   Size,   Flags
+nvs,      data, nvs,      0x9000,   0x5000,
+otadata,  data, ota,      0xe000,   0x2000,
+factory,  app,  factory,  0x10000,  0x1F0000,
+nvs_key,  data, nvs_keys, 0x200000, 0x1000,
+storage,  data, spiffs,   0x201000, 0x1FF000,
